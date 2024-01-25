@@ -1,0 +1,37 @@
+.function-based-app {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #98aded;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 112rem;
+  gap: 4rem;
+  padding: 6rem 0;
+  margin: 5rem;
+  border: 2px solid #222;
+  outline: 2px solid #222;
+  outline-offset: 1.2rem;
+}
+
+.function-based-app input {
+  font-family: inherit;
+  text-transform: uppercase;
+  color: inherit;
+  font-size: 2rem;
+  background-color: #a8caea;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  width: 32rem;
+}
+
+.function-based-app .day {
+  background-color: #a8caea;
+  padding: 1.6rem 0 2rem;
+  width: 12.8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+}
