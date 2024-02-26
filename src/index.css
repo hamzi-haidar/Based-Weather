@@ -36,19 +36,25 @@ input:focus {
   display: flex;
   gap: 2.4rem;
 }
-.day span {
+.weather span {
   font-size: 5.2rem;
 }
+
 .loader {
   font-size: 2.4rem;
   font-weight: 700;
 }
 
-.day span {
-  font-size: 5.2rem;
-}
-
 .day.important {
   background-color: #f0f0f0;
   outline: 2px solid #222;
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  width: 32rem;
 }

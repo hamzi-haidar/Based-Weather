@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./AppClassBased.module.css";
 
 function getWeatherIcon(wmoCode) {
   const icons = new Map([
@@ -95,7 +96,7 @@ class AppClassBased extends React.Component {
   render() {
     return (
       <div
-        className="class-based-app"
+        className={styles.app}
         // onKeyDown={(e) => e.key === "Enter" && this.fetchWeather()}
       >
         <h1>Class Based React Weather</h1>
@@ -170,7 +171,7 @@ class Day extends React.Component {
     const { date, max, min, code, isToday } = this.props;
 
     return (
-      <li className="day">
+      <li className={styles.day}>
         <span>{getWeatherIcon(code)}</span>
         <p>{isToday ? "Today" : formatDay(date)}</p>
         <p>

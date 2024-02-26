@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./general.css";
-import "./classBased.css";
-import "./functionBased.css";
+import "./index.css";
 import AppFunctionBased from "./AppFunctionBased.js";
 import AppClassBased from "./AppClassBased.js";
 

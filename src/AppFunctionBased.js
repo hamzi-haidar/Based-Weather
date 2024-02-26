@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import styles from "./AppFunctionBased.module.css";
 
 function getWeatherIcon(wmoCode) {
   const icons = new Map([
@@ -84,7 +85,7 @@ export default function AppFunctionBased() {
   }
 
   return (
-    <div className="function-based-app">
+    <div className={styles.app}>
       <h1>function Based React Weather</h1>
       <Input location={location} onChangeLocation={handleSetLocation} />
 
@@ -139,7 +140,7 @@ function Weather({ weather, location }) {
 
 function Day({ isToday, code, date, min, max }) {
   return (
-    <li className="day">
+    <li className={styles.day}>
       <span>{getWeatherIcon(code)}</span>
       <p>{isToday ? "Today" : formatDay(date)}</p>
       <p>
